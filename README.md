@@ -93,9 +93,7 @@ TEAPOT/
 ├── README.md                          # This file
 ├── LICENSE                            # MIT License
 ├── tensor_validation_framework.py     # Validation code (sanitized)
-├── validation_metrics.csv             # Computed results
-├── ME_Tensor_Research_Paper.md        # Academic documentation
-└── .gitignore                         # Python ignore rules
+├── TEAPOT_Research_Paper.md           # Academic documentation└── .gitignore                         # Python ignore rules
 ```
 
 ## Usage
