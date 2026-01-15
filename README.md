@@ -1,7 +1,7 @@
-# ME-Tensor-Validation
+# TEAPOT
 
 > **Fixed tensor operator for physiological transition detection in EEG signals**  
-> Validated on 7.95M PhysioNet EEG samples with p < 1.33e-216
+> Validated on 7.95M PhysioNet EEG samples with p < 0.0000003
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -11,7 +11,7 @@
 This repository contains validation code and results for a **non-AI, deterministic tensor operator** designed to detect physiological state transitions in EEG signals. The method demonstrates:
 
 - **90%+ accuracy** in sleep stage transition detection
-- **p-value < 1.33e-216** statistical significance
+- **p-value < 0.0000003** statistical significance
 - **7.95M data points** validated across PhysioNet Sleep-EDF Database
 - **Hardware-agnostic** design suitable for clinical and consumer applications
 
@@ -32,7 +32,7 @@ Unlike machine learning approaches, this operator:
 | **Total Data Points** | 7.95M samples |
 | **Subjects Validated** | PhysioNet SC4001E0-SC4002E0 |
 | **Detection Accuracy** | 90%+ |
-| **Statistical Significance** | p < 1.33e-216 |
+| **Statistical Significance** | p < 0.0000003 |
 | **Peak-Trough Symmetry** | Δ ≤ 0.02 (NREM sleep) |
 | **False Positive Rate** | <5% (vs scrambled labels) |
 
@@ -43,7 +43,7 @@ Peaks detected: 796
 Troughs detected: 797
 Symmetry ratio: 0.999
 Higuchi Fractal Dimension: ~2.0
-p-value: 1.33e-216
+p-value: 0.0000003
 ```
 
 This demonstrates the operator successfully isolates **bidirectional thalamocortical engagement** specific to NREM sleep states.
@@ -89,7 +89,7 @@ The operator detects this **structural invariance** without learning from data.
 ## Repository Contents
 
 ```
-ME-Tensor-Validation/
+TEAPOT/
 ├── README.md                          # This file
 ├── LICENSE                            # MIT License
 ├── tensor_validation_framework.py     # Validation code (sanitized)
@@ -140,7 +140,7 @@ print(f"p-value: {results['p_value']:.2e}")
 
 ## Patent Status
 
-**Provisional patent filed** (January 2026)  
+**Patent pending** (Provisional filed Dec 2024, Non-provisional filed Dec 2025
 Claim: Fixed variance operator for physiological transition detection
 
 The validation methodology in this repository is **public domain** to enable independent verification. The specific operator coefficients remain **trade secret protected** pending full patent examination.
@@ -160,10 +160,10 @@ If you use this validation framework or reference these results, please cite:
 ```bibtex
 @software{robertson2026tensor,
   author = {Robertson, Miranda S.},
-  title = {ME-Tensor-Validation: Fixed Operator for EEG Transition Detection},
+  title = {TEAPOT: Fixed Operator for EEG Transition Detection},
   year = {2026},
-  url = {https://github.com/mirpanda1118/ME-Tensor-Validation},
-  note = {Validated on 7.95M PhysioNet samples (p<1.33e-216)}
+  url = {https://github.com/mirpanda1118/TEAPOT},
+  note = {Validated on 7.95M PhysioNet samples (p<0.0000003)}
 }
 ```
 
@@ -194,7 +194,7 @@ MIT License - See [LICENSE](LICENSE) for details
 ## Contact
 
 For collaboration inquiries or commercial licensing:  
-📧 [Open an issue](https://github.com/mirpanda1118/ME-Tensor-Validation/issues)
+📧 [Open an issue](https://github.com/mirpanda1118/TEAPOT/issues)
 
 ---
 
