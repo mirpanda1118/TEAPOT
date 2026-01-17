@@ -194,6 +194,127 @@ MIT License - See [LICENSE](LICENSE) for details
 For collaboration inquiries or commercial licensing:  
 📧 [Open an issue](https://github.com/mirpanda1118/TEAPOT/issues)
 
+## FAQ
+
+### Why aren't the operator coefficients open source?
+
+The 10-element operator is patent-pending intellectual property filed in December 2024 (provisional) and December 2025 (non-provisional). This protects the innovation while enabling:
+
+- **Independent validation** through our public framework
+- **Commercial licensing** for real-world applications  
+- **Academic verification** without proprietary disclosure
+
+We believe this balances open science transparency with sustainable IP commercialization.
+
+### How does this differ from machine learning approaches?
+
+Key differences:
+
+| Feature | This Method | ML Approaches |
+|---------|-------------|---------------|
+| Training Required | No | Yes (200k+ samples) |
+| Interpretability | High (fixed math) | Low (black box) |
+| Hardware | Any EEG device | Specific to training data |
+| Latency | <0.1s | <1s |
+| Accuracy | 90%+ | 87-92% |
+
+Our operator uses **universal signal properties** rather than learned patterns, making it hardware-agnostic and interpretable.
+
+### Can I test this on my own EEG data?
+
+Yes! The validation framework supports any EEG data in standard formats:
+
+1. Install requirements: `pip install -r requirements.txt`
+2. Load your EEG data (MNE-compatible formats)
+3. Run `validate_operator()` with your dataset
+4. Compare symmetry metrics across sleep stages
+
+Note: You'll need placeholder coefficients for testing. The actual operator requires licensing.
+
+### What's the commercialization path?
+
+We're exploring:
+
+- **Clinical partnerships**: Sleep labs, anesthesia monitoring
+- **Consumer devices**: Wearable EEG integration (Muse, OpenBCI)
+- **Research licensing**: Academic institutions
+- **API services**: Real-time EEG state classification
+
+Interested parties should open a GitHub issue with "Commercial Inquiry."
+
+### Is this peer-reviewed?
+
+Current status: **Preprint with comprehensive validation**
+
+We've prioritized:
+- ✅ Extensive validation (7.95M samples)
+- ✅ Negative controls (scrambled labels, synthetic noise)  
+- ✅ Cross-subject replication
+- ✅ Statistical rigor (p<0.0000003)
+
+Submission to peer-reviewed journals is planned post-patent issuance.
+
+### Why PhysioNet data specifically?
+
+PhysioNet Sleep-EDF is the gold standard for EEG validation:
+
+- **Public accessibility** (reproducible research)
+- **Expert annotations** (Rechtschaffen & Kales standards)
+- **Clinical-grade quality** (hospital recordings)
+- **Standardized format** (EDF with 100 Hz sampling)
+
+This ensures our results are verifiable by any researcher worldwide.
+
+---
+
+## Commercial Licensing & Partnerships
+
+### Available Licensing Models
+
+#### 🏥 Clinical License
+- **Use Case**: Sleep labs, hospitals, anesthesia monitoring
+- **Includes**: Operator coefficients, integration support, HIPAA compliance
+- **Pricing**: Custom based on deployment scale
+
+#### 📱 Consumer Device License
+- **Use Case**: Wearable EEG manufacturers (Muse, OpenBCI, etc.)
+- **Includes**: Embedded firmware, real-time processing, white-label options
+- **Pricing**: Per-device royalty or flat licensing fee
+
+#### 🔬 Academic Research License  
+- **Use Case**: University labs, neuroscience research
+- **Includes**: Limited operator access for research purposes
+- **Pricing**: Discounted rates for non-commercial research
+
+#### ☁️ API/SaaS License
+- **Use Case**: Cloud-based EEG analysis platforms
+- **Includes**: REST API, batch processing, real-time streaming
+- **Pricing**: Per-call or subscription model
+
+### Why License TEAPOT?
+
+✅ **No training required** - Deploy immediately without collecting labeled data  
+✅ **Hardware-agnostic** - Works on any EEG device (clinical or consumer-grade)  
+✅ **Real-time capable** - Sub-second latency for live monitoring  
+✅ **Scientifically validated** - 7.95M samples, p<0.0000003 significance  
+✅ **Patent-protected** - Exclusive commercial rights available
+
+### Get Started
+
+Interested in commercial licensing or partnerships?
+
+1. **Open a GitHub Issue** with "Commercial Inquiry" in the title
+2. **Include**: Your use case, deployment scale, and timeline
+3. **We'll respond** within 48 hours to discuss licensing options
+
+📧 **Contact**: [Open an issue](https://github.com/mirpanda1118/TEAPOT/issues) with your inquiry
+
+💼 **Partnership Opportunities**: We're open to co-development, equity partnerships, and joint ventures
+
+---
+
+**Ready to bring validated, training-free EEG analysis to your application? Let's talk.**
+
 ---
 
 **Note**: This repository contains validation methodology only. Operator coefficients are patent-protected and not disclosed. The goal is to demonstrate scientific rigor and enable independent verification of claims.
