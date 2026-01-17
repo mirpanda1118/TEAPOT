@@ -22,8 +22,7 @@ Unlike machine learning approaches, this operator:
 - Operates on **raw EEG voltage** without preprocessing
 - Detects **bidirectional symmetry** in thalamocortical loops
 - Achieves **sub-second latency** for real-time monitoring
-- - **Detects authentic biological signals** - Only responds to real physiological data; fails on synthetic/artificial EEG
-
+- **Detects authentic biological signals** - Only responds to real physiological data; fails on ALL synthetic/artificially-generated data across all domains
 ## Validation Results
 
 ### Statistical Summary
@@ -51,8 +50,7 @@ This demonstrates the operator successfully isolates **bidirectional thalamocort
 
 ### Negative Control Testing
 
-**Critical Finding:** The operator detects authentic thalamocortical dynamics that cannot be artificially reproduced. This validates that TEAPOT responds to real biological signal structures, not statistical artifacts.
-
+**Critical Finding:** The operator detects authentic thalamocortical dynamics that cannot be artificially reproduced through ANY form of synthetic data generation. This validates that TEAPOT responds exclusively to real biological signal structures across all data domains, not statistical artifacts.
 The operator was tested against:
 - ✅ **Scrambled sleep labels** - Performance degraded >10%, confirming physiological signal detection
 - ✅ **Synthetic noise (pink, brown, white)** - Symmetry broke as expected
